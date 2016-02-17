@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="22" inline="true" x="41" y="15">
+  <block type="controls_repeat" id="22" inline="true" x="39" y="-13">
     <value name="TIMES">
       <block type="math_number" id="39">
         <field name="NUM">100000</field>
@@ -56,7 +56,19 @@
                           <block type="movement_left" id="192"></block>
                         </statement>
                         <next>
-                          <block type="movement_stop" id="127"></block>
+                          <block type="controls_repeat" id="215" inline="true">
+                            <value name="TIMES">
+                              <block type="math_number" id="232">
+                                <field name="NUM">100000</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="movement_right" id="225"></block>
+                            </statement>
+                            <next>
+                              <block type="movement_stop" id="127"></block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
