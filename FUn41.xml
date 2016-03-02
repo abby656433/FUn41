@@ -79,16 +79,29 @@
                                   <block type="movement_setmotors" id="34" inline="true">
                                     <value name="BOTHMOVLEFT">
                                       <block type="math_number" id="41">
-                                        <field name="NUM">1000</field>
+                                        <field name="NUM">10000</field>
                                       </block>
                                     </value>
                                     <value name="BOTHMOVRIGHT">
                                       <block type="math_number" id="48">
-                                        <field name="NUM">1000</field>
+                                        <field name="NUM">10000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="24"></block>
+                                      <block type="controls_whileUntil" id="67" inline="false">
+                                        <field name="MODE">WHILE</field>
+                                        <value name="NUMBER">
+                                          <block type="math_number" id="84">
+                                            <field name="NUM">10000</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="movement_forward" id="77"></block>
+                                        </statement>
+                                        <next>
+                                          <block type="movement_stop" id="24"></block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
