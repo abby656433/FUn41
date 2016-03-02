@@ -76,7 +76,21 @@
                                   <block type="movement_stutter" id="23"></block>
                                 </statement>
                                 <next>
-                                  <block type="movement_stop" id="24"></block>
+                                  <block type="movement_setmotors" id="34" inline="true">
+                                    <value name="BOTHMOVLEFT">
+                                      <block type="math_number" id="41">
+                                        <field name="NUM">1000</field>
+                                      </block>
+                                    </value>
+                                    <value name="BOTHMOVRIGHT">
+                                      <block type="math_number" id="48">
+                                        <field name="NUM">1000</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="24"></block>
+                                    </next>
+                                  </block>
                                 </next>
                               </block>
                             </next>
