@@ -76,30 +76,30 @@
                                   <block type="movement_stutter" id="23"></block>
                                 </statement>
                                 <next>
-                                  <block type="movement_setmotors" id="34" inline="true">
+                                  <block type="movement_setmotors" id="24" inline="true">
                                     <value name="BOTHMOVLEFT">
-                                      <block type="math_number" id="41">
+                                      <block type="math_number" id="25">
                                         <field name="NUM">1000</field>
                                       </block>
                                     </value>
                                     <value name="BOTHMOVRIGHT">
-                                      <block type="math_number" id="48">
+                                      <block type="math_number" id="26">
                                         <field name="NUM">1000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="controls_whileUntil" id="67" inline="false">
+                                      <block type="controls_whileUntil" id="27" inline="false">
                                         <field name="MODE">UNTIL</field>
                                         <value name="NUMBER">
-                                          <block type="math_number" id="84">
+                                          <block type="math_number" id="28">
                                             <field name="NUM">1000</field>
                                           </block>
                                         </value>
                                         <statement name="DO">
-                                          <block type="movement_forward" id="77"></block>
+                                          <block type="movement_forward" id="29"></block>
                                         </statement>
                                         <next>
-                                          <block type="movement_stop" id="24"></block>
+                                          <block type="movement_stop" id="30"></block>
                                         </next>
                                       </block>
                                     </next>
